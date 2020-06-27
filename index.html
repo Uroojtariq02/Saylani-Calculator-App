@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Calculator JavaScript Web App</title>
+
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <input id="calculator-screen" type="text" value="0" class="calculator-screen" disabled>
+        
+            <div class="calculator-keys">
+                <button type="button" onclick="getOperation('+')" class="operator" value="+">+</button>
+                <button type="button" onclick="getOperation('-')" class="operator" value="-">-</button>
+                <button type="button" onclick="getOperation('*')" class="operator" value="*">&times;</button>
+                <button type="button" onclick="getOperation('/')" class="operator" value="/">&divide;</button>
+        
+                <button type="button" onclick="getNumber('7')" value="7">7</button>
+                <button type="button" onclick="getNumber('8')" value="8">8</button>
+                <button type="button" onclick="getNumber('9')" value="9">9</button>
+        
+        
+                <button type="button" onclick="getNumber('4')" value="4">4</button>
+                <button type="button" onclick="getNumber('5')" value="5">5</button>
+                <button type="button" onclick="getNumber('6')" value="6">6</button>
+        
+        
+                <button type="button" onclick="getNumber('1')" value="1">1</button>
+                <button type="button" onclick="getNumber('2')" value="2">2</button>
+                <button type="button" onclick="getNumber('3')" value="3">3</button>
+        
+        
+                <button type="button" onclick="getNumber('0')" value="0">0</button>
+                <button type="button" onclick='getDecimal()' class="decimal" value=".">.</button>
+                <button type="button" onclick="clearScreen()" class="all-clear" value="all-clear">AC</button>
+        
+                <button type="button" onclick="doCalculation()" class="equal-sign" value="=">=</button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
